@@ -1,4 +1,3 @@
-# iaing
 ---
 permalink: /index.html
 ---
