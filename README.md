@@ -1,0 +1,4 @@
+# iaing
+---
+permalink: /index.html
+---
