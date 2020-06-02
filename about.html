@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="sitestyle.css">
+<Style>
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 60%;
+    height: 24rem;
+    padding-bottom: 40%;
+    background: lightgrey;
+    border: solid 10px #2c2c2c;
+}
+
+#container2 {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 80%;
+    height: 100px;
+    padding-bottom: 30%;
+    background: lightgrey;
+    border: solid 10px #2c2c2c;
+}
+
+#container3 {
+    margin: 0 auto;
+    position: relative;
+    width: 40%;
+    background: lightgrey;
+    border: solid 10px #2c2c2c;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    padding: 0px 20px 0px 20px;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+    z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+    background: rgba(0,0,0,0.4);
+}
+
+
+.slide_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dots {
+    top: -0px;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.6);
+}
+</Style>
+</head>
+
+
+<body>
+
+    <header>
+        <div id="container1">
+
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <p id="title">About me</p> 
+
+  
+    <div class="container">
+
+        
+        <p style="text-indent: 7%;"><b>My name is Iain, I'm 14 years old, born in Vancouver on October 5th and have lived here my entire life. I've alwahys had an interest in computers and robotics and I hope to pursue a career in programming or game development.
+        </b></p>
+        <p style="text-indent: 7%;"><b>Since I was a kid I've always liked playing with robotics and arduinos and trying to improve my coding skills as much as I could from playing with arduinos to making my own websites and video games. I also have some other hobbies apart from just computers, I play badminton for 8 hours a week and I'm also a casual photographer and musician. I play the flute and am also trying to learn as many instruments as possible. Here's a small collection of some of my photos:
+        </b></p>
+
+
+
+        <div id="container2">
+
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+        
+        
+        
+        
+        
+        
+            <div class="slide_img" id="one">
+                <img src="images/Sunpeaks.jpg">
+        
+                <label for="i3" class="pre"></label>
+                <label for="i2" class="nxt"></label>
+            </div>
+            
+        
+            <div class="slide_img" id="two">
+                <img src="images/England.jpg">
+        
+                <label for="i1" class="pre"></label>
+                <label for="i3" class="nxt"></label>
+            </div>
+        
+        
+            <div class="slide_img" id="three">
+                <img src="images/glacier.JPG">
+        
+                <label for="i2" class="pre"></label>
+                <label for="i1" class="nxt"></label>
+            </div>
+        
+    
+        
+            <div class="nav">
+                <label class="dots" id="dot1" for="i1"></label>
+                <label class="dots" id="dot2" for="i2"></label>
+                <label class="dots" id="dot3" for="i3"></label>
+            </div>
+        </div> 
+
+        <p style="text-indent: 7%;"><b>I currently attend Prince of Wales Secondary School in Grade 9, my favourite classes are web dev, science, and band. I hope to graduate and go to UBC for computer science.
+        </b></p>
+</div>
+
+
+<p id="title" style="font-size: 200%; margin-top: 5%;">Socials and Contacts</p> 
+<div id="container3">
+    <p>
+        igriesdale@gmail.com
+    </p>
+
+    <p style="text-align: right;">
+        <a href="https://github.com/Iain05">
+            <img src="images/github.svg" style="width: 4%; height: auto; margin-top: 10px;">
+            https://github.com/Iain05
+        </a>
+    </p>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+</body>
+
+</html>
